@@ -16,6 +16,7 @@ const Contact = () => {
               mr={4}
               borderRadius="full"
               _hover={{ transform: "scale(1.1)" }}
+              bgColor="gray.600"
             />
           </Link>
         </NextLink>
@@ -30,6 +31,7 @@ const Contact = () => {
               size="sm"
               mr={4}
               _hover={{ transform: "scale(1.1)" }}
+              bgColor="gray.600"
             />
           </Link>
         </NextLink>
