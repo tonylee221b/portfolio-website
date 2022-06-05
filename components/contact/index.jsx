@@ -15,7 +15,6 @@ const Contact = () => {
               size="sm"
               mr={4}
               borderRadius="full"
-              color="white"
               _hover={{ transform: "scale(1.1)" }}
             />
           </Link>
@@ -30,7 +29,6 @@ const Contact = () => {
               icon={<BsLinkedin />}
               size="sm"
               mr={4}
-              color="white"
               _hover={{ transform: "scale(1.1)" }}
             />
           </Link>

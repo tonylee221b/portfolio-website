@@ -5,8 +5,15 @@ import Contact from "../contact";
 
 const Navbar = props => {
   return (
-    <Box w="100%" bg="gray.700" position="fixed" zIndex={10} {...props}>
-      <Container maxW="container.lg" py={1} shadow="lg">
+    <Box
+      w="100%"
+      bg="gray.700"
+      position="fixed"
+      zIndex={10}
+      {...props}
+      shadow="lg"
+    >
+      <Container maxW="container.lg" py={1}>
         <Flex alignItems="center">
           <MenuLogo />
           <MenuLink link="About" />

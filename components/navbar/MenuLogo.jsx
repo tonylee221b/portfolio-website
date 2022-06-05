@@ -1,9 +1,7 @@
-import { useColorModeValue } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { Link } from "@chakra-ui/react";
 import Image from "next/image";
-import LogoDark from "../../public/Logo_Light.png";
-import LogoLight from "../../public/Logo_Dark.png";
+import LogoLight from "../../public/Logo_Light.png";
 
 const MenuLogo = () => {
   return (
@@ -13,12 +11,7 @@ const MenuLogo = () => {
         _focus={{ boxShadow: "none" }}
         mr={5}
       >
-        <Image
-          src={useColorModeValue(LogoLight, LogoDark)}
-          width={60}
-          height={60}
-          alt="Logo"
-        />
+        <Image src={LogoLight} width={60} height={60} alt="Logo" />
       </Link>
     </NextLink>
   );
