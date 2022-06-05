@@ -4,7 +4,7 @@ export const PageLoadDiv = ({ children }) => {
   return (
     <motion.div
       initial={{
-        y: -10,
+        y: -15,
         opacity: 0,
       }}
       animate={{
@@ -12,12 +12,10 @@ export const PageLoadDiv = ({ children }) => {
         opacity: 1,
       }}
       exit={{
-        y: 10,
+        y: 15,
         opacity: 0,
       }}
-      transition={{
-        duration: 0.3,
-      }}
+      transition={{ duration: 0.4 }}
     >
       {children}
     </motion.div>

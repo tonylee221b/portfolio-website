@@ -73,14 +73,12 @@ const MyDevEnv = () => {
           Dev Setup 💻
         </Heading>
         <Flex bgColor="teal.700" borderRadius="15px">
-          <Box></Box>
-          <Box ml="auto">
-            <NextLink
-              href="https://github.com/tonylee221b/dotfiles"
-              passHref
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <Box mx={5} my="auto">
+            <AboutDeskInfo title="Editor :" desc="Neovim" />
+            <AboutDeskInfo title="My Dotfiles for neovim setup 👉" />
+          </Box>
+          <Box ml="auto" my="auto">
+            <NextLink href="https://github.com/tonylee221b/dotfiles" passHref>
               <Link target="_blank" rel="noopener noreferrer">
                 <Image
                   src="https://gh-card.dev/repos/tonylee221b/dotfiles.svg"
