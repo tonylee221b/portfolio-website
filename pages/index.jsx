@@ -1,4 +1,5 @@
-import { Box, Container, Heading, Image } from "@chakra-ui/react";
+import NextLink from "next/link";
+import { Box, Container, Heading, Image, Link } from "@chakra-ui/react";
 import { PageLoadDiv } from "../components/animation";
 
 const Home = () => {
@@ -22,6 +23,22 @@ const Home = () => {
             borderWidth={10}
             boxSize={300}
           />
+        </Box>
+        <Box mt={20} display="flex">
+          <NextLink href="/portfolio" passHref>
+            <Link
+              bgColor="cyan.500"
+              px={8}
+              py={5}
+              fontSize={18}
+              fontWeight="bold"
+              _hover={{ bgColor: "cyan.900" }}
+              borderRadius="2xl"
+              mx="auto"
+            >
+              View My Portfolio
+            </Link>
+          </NextLink>
         </Box>
       </PageLoadDiv>
     </Container>
