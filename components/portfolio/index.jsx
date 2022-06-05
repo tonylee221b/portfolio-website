@@ -15,10 +15,11 @@ const PortfolioItem = ({ link, imgSrc, title, desc }) => {
             <Image
               src={imgSrc}
               w="full"
-              h={480}
-              alt="Hackathon Project"
+              h={450}
+              alt="Project"
               borderRadius="2xl"
               shadow="2xl"
+              objectFit="contain"
             />
             <Heading as="h4" fontSize="3xl" textAlign="center" py="14">
               {title}

@@ -29,6 +29,12 @@ const Portfolio = () => {
           <Text as="h2" fontSize="2xl">
             ‣ Personal Projects
           </Text>
+          <PortfolioItem
+            link="https://github.com/tonylee221b/Android-Quote-Project.git"
+            imgSrc="Thumbnail - Android.png"
+            title="Simple Images & Quotes generator app - Android(Java)"
+            desc=""
+          />
           <Text as="h2" fontSize="2xl">
             ‣ Clone Projects
           </Text>
