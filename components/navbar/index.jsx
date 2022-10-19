@@ -16,7 +16,6 @@ const Navbar = props => {
       <Container maxW="container.lg" py={1}>
         <Flex alignItems="center">
           <MenuLogo />
-          <MenuLink link="About" />
           <MenuLink link="Portfolio" />
           <Spacer />
           <Contact />

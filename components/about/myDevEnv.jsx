@@ -8,21 +8,29 @@ const MyDevEnv = () => {
       <Heading as="h1" fontSize="5xl" mt={40} mb={20}>
         My Dev Environment
       </Heading>
-      <Box>
+      <Box mx={{ base: "auto" }}>
         <Heading as="h2" fontSize="3xl" mb={14}>
           Desk Setup 🚀
         </Heading>
-        <Flex bgColor="purple.900" borderRadius="15px" shadow="lg">
-          <Box>
+        <Flex
+          bgColor="purple.900"
+          borderRadius="15px"
+          shadow="lg"
+          flexDir={{ base: "column", md: "row", lg: "row" }}
+        >
+          <Box
+            my={{ base: 10, md: "auto", lg: "auto" }}
+            mx={{ base: "auto", md: 0, lg: 0 }}
+          >
             <Image
-              src="tony's room.jpeg"
+              src="Desk Set UP.jpeg"
               alt="Desk Setup"
               borderRadius="15px"
-              w={450}
-              h={420}
+              w={{ base: 200, md: 380, lg: 450 }}
+              objectFit="fill"
             />
           </Box>
-          <Box mx={10} my="auto">
+          <Box mx={10} my="auto" py={10}>
             <AboutDeskInfo
               title="Display :"
               desc='
@@ -56,7 +64,7 @@ const MyDevEnv = () => {
             <AboutDeskInfo
               title="Device :"
               desc="
-              Mac Mini M1
+              Macbook Pro M1 Pro 14'
               "
             />
             <AboutDeskInfo
@@ -72,8 +80,12 @@ const MyDevEnv = () => {
         <Heading as="h2" fontSize="3xl" mb={14}>
           Dev Setup 💻
         </Heading>
-        <Flex bgColor="teal.700" borderRadius="15px">
-          <Box mx={5} my="auto">
+        <Flex
+          bgColor="teal.700"
+          borderRadius="15px"
+          flexDir={{ base: "column", md: "row", lg: "row" }}
+        >
+          <Box mx={5} my={{ base: 5, md: "auto", lg: "auto" }}>
             <AboutDeskInfo title="Editor :" desc="Neovim" />
             <AboutDeskInfo title="My Dotfiles for neovim setup 👉" />
           </Box>

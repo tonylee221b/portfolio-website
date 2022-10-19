@@ -25,3 +25,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# Todo List
+Todo.md
+
